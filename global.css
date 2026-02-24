@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .no-scrollbar {
+    /* React Native doesn't support CSS for scrollbars, typically handled via ScrollView props */
+    /* but we can leave this here if web output is intended */
+  }
+}
