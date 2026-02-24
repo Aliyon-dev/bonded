@@ -184,27 +184,6 @@ export default function ChatInterface() {
         </View>
       </KeyboardAvoidingView>
 
-      {/* Bottom Nav Bar - Reused logic from Home, or just a bar */}
-      <View className="flex-row justify-between items-center border-t border-primary/10 bg-surface-light dark:bg-surface-dark px-6 py-3 pb-6 sticky bottom-0 z-40 w-full">
-          <TouchableOpacity onPress={() => router.push('/home')} className="flex-1 items-center gap-1 group">
-            <MaterialIcons name="home" size={24} className="text-text-sub dark:text-text-dark" />
-            <Text className="text-[10px] font-medium text-text-sub dark:text-text-dark">Home</Text>
-          </TouchableOpacity>
-          <TouchableOpacity onPress={() => router.push('/home')} className="flex-1 items-center gap-1 group">
-            <View className="bg-primary/10 dark:bg-primary/20 p-1.5 rounded-full px-4">
-              <MaterialIcons name="forum" size={24} className="text-primary" />
-            </View>
-            <Text className="text-[10px] font-bold text-primary">Circles</Text>
-          </TouchableOpacity>
-          <TouchableOpacity onPress={() => router.push('/reflection')} className="flex-1 items-center gap-1 group">
-            <MaterialIcons name="spa" size={24} className="text-text-sub dark:text-text-dark" />
-            <Text className="text-[10px] font-medium text-text-sub dark:text-text-dark">Relax</Text>
-          </TouchableOpacity>
-          <TouchableOpacity onPress={() => router.push('/setup')} className="flex-1 items-center gap-1 group">
-             <MaterialIcons name="person" size={24} className="text-text-sub dark:text-text-dark" />
-            <Text className="text-[10px] font-medium text-text-sub dark:text-text-dark">Profile</Text>
-          </TouchableOpacity>
-      </View>
     </SafeAreaView>
   );
 }

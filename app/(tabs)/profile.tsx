@@ -10,14 +10,8 @@ export default function IdentitySetup() {
   return (
     <SafeAreaView className="flex-1 bg-background-light dark:bg-background-dark">
       {/* Top App Bar */}
-      <View className="flex-row items-center px-4 py-4 border-b border-black/5 dark:border-white/10">
-        <TouchableOpacity
-          onPress={() => router.back()}
-          className="w-10 h-10 items-center justify-center rounded-full bg-surface-light dark:bg-surface-dark shadow-sm"
-        >
-          <MaterialIcons name="arrow-back" size={24} className="text-text-main dark:text-text-light" />
-        </TouchableOpacity>
-        <Text className="text-text-main dark:text-text-light text-lg font-bold flex-1 text-center pr-10">Create Your Identity</Text>
+      <View className="flex-row items-center px-4 py-4 border-b border-black/5 dark:border-white/10 justify-center">
+        <Text className="text-text-main dark:text-text-light text-lg font-bold text-center">Your Profile</Text>
       </View>
 
       <ScrollView className="flex-1 px-6" contentContainerStyle={{ paddingBottom: 100 }}>
@@ -112,11 +106,11 @@ export default function IdentitySetup() {
       {/* Sticky Bottom Action */}
       <View className="absolute bottom-0 left-0 right-0 p-6 bg-background-light/95 dark:bg-background-dark/95 border-t border-black/5 dark:border-white/5">
         <TouchableOpacity
-          onPress={() => router.push('/home')}
+          onPress={() => router.push('/')}
           className="w-full bg-primary py-4 rounded-xl shadow-lg flex-row items-center justify-center gap-2"
         >
-          <Text className="text-white text-base font-semibold">Complete Setup</Text>
-          <MaterialIcons name="arrow-forward" size={20} color="white" />
+          <Text className="text-white text-base font-semibold">Save Profile</Text>
+          <MaterialIcons name="check" size={20} color="white" />
         </TouchableOpacity>
       </View>
     </SafeAreaView>

@@ -12,26 +12,14 @@ export default function CreateCircle() {
     <View className="flex-1 bg-circle-bg-light dark:bg-circle-bg-dark">
       <SafeAreaView className="flex-1">
         {/* Header */}
-        <View className="flex-row items-center p-4 pt-2 pb-2 justify-between bg-circle-bg-light dark:bg-circle-bg-dark z-10">
-          <TouchableOpacity
-            onPress={() => router.back()}
-            className="w-10 h-10 items-center justify-center rounded-full hover:bg-circle-primary/10"
-          >
-            <MaterialIcons name="arrow-back" size={24} className="text-slate-900 dark:text-slate-100" />
-          </TouchableOpacity>
-          <View className="flex-1 items-center">
+        <View className="flex-row items-center p-4 pt-2 pb-2 justify-center bg-circle-bg-light dark:bg-circle-bg-dark z-10">
+          <View className="items-center">
             <View className="flex-row gap-2">
               <View className="h-2 w-8 rounded-full bg-circle-primary" />
               <View className="h-2 w-2 rounded-full bg-circle-primary/20 dark:bg-circle-primary/30" />
               <View className="h-2 w-2 rounded-full bg-circle-primary/20 dark:bg-circle-primary/30" />
             </View>
           </View>
-          <TouchableOpacity
-            onPress={() => router.push('/home')}
-            className="w-10 h-10 items-center justify-center rounded-full"
-          >
-            <MaterialIcons name="close" size={24} className="text-slate-400 dark:text-slate-500" />
-          </TouchableOpacity>
         </View>
 
         <ScrollView className="flex-1 px-6 py-4" contentContainerStyle={{ paddingBottom: 100 }}>

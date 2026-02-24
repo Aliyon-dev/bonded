@@ -13,12 +13,6 @@ export default function ReflectionDashboard() {
       {/* Header */}
       <View className="flex-row items-center justify-between px-6 pt-4 pb-4 bg-reflection-bg-light/90 dark:bg-background-dark/90 backdrop-blur-md z-20 sticky top-0">
         <View className="flex-row items-center gap-3">
-          <TouchableOpacity
-            onPress={() => router.back()}
-            className="p-2 -ml-2 rounded-full hover:bg-reflection-surface-light dark:hover:bg-surface-dark"
-          >
-            <MaterialIcons name="arrow-back" size={24} className="text-reflection-text-main dark:text-white" />
-          </TouchableOpacity>
           <Text className="text-xl font-semibold tracking-tight text-reflection-text-main dark:text-white">Your Reflection</Text>
         </View>
         <TouchableOpacity className="p-2 rounded-full hover:bg-reflection-surface-light dark:hover:bg-surface-dark">
@@ -155,28 +149,6 @@ export default function ReflectionDashboard() {
         </View>
       </ScrollView>
 
-      {/* Bottom Navigation Bar */}
-      <View className="absolute bottom-0 w-full bg-reflection-bg-light/95 dark:bg-background-dark/95 border-t border-reflection-secondary/30 dark:border-gray-800 pb-5 pt-3 px-6 shadow-sm z-50 flex-row justify-between items-center">
-          <TouchableOpacity onPress={() => router.push('/home')} className="flex-1 items-center justify-end gap-1 group">
-            <MaterialIcons name="home" size={26} className="text-reflection-text-light hover:text-reflection-primary" />
-            <Text className="text-[10px] font-medium text-reflection-text-light hover:text-reflection-primary">Home</Text>
-          </TouchableOpacity>
-          <TouchableOpacity onPress={() => router.push('/chat')} className="flex-1 items-center justify-end gap-1 group">
-            <MaterialIcons name="groups" size={26} className="text-reflection-text-light hover:text-reflection-primary" />
-            <Text className="text-[10px] font-medium text-reflection-text-light hover:text-reflection-primary">Connect</Text>
-          </TouchableOpacity>
-          {/* Active Item */}
-          <TouchableOpacity onPress={() => router.push('/reflection')} className="flex-1 items-center justify-end gap-1">
-            <View className="bg-reflection-primary/10 rounded-2xl px-5 py-1 items-center justify-center">
-              <MaterialIcons name="auto_awesome" size={24} className="text-reflection-primary" />
-            </View>
-            <Text className="text-[10px] font-medium text-reflection-primary">Reflect</Text>
-          </TouchableOpacity>
-          <TouchableOpacity onPress={() => router.push('/setup')} className="flex-1 items-center justify-end gap-1 group">
-            <MaterialIcons name="person" size={26} className="text-reflection-text-light hover:text-reflection-primary" />
-            <Text className="text-[10px] font-medium text-reflection-text-light hover:text-reflection-primary">Profile</Text>
-          </TouchableOpacity>
-      </View>
     </SafeAreaView>
   );
 }

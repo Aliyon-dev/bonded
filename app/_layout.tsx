@@ -29,11 +29,8 @@ export default function Layout() {
   return (
     <Stack screenOptions={{ headerShown: false }}>
       <Stack.Screen name="index" />
-      <Stack.Screen name="setup" />
-      <Stack.Screen name="home" />
-      <Stack.Screen name="create-circle" />
+      <Stack.Screen name="(tabs)" />
       <Stack.Screen name="chat" />
-      <Stack.Screen name="reflection" />
     </Stack>
   );
 }

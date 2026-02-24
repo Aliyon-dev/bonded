@@ -123,7 +123,7 @@ const WelcomeScreen = () => {
         {/* Bottom Action Area */}
         <View className="px-6 py-8 pb-10 w-full bg-welcome-bg-light/95 dark:bg-background-dark/95">
           <TouchableOpacity
-            onPress={() => router.push('/setup')}
+            onPress={() => router.push('/profile')}
             className="w-full py-4 px-6 bg-accent-lavender dark:bg-primary rounded-full shadow-sm flex-row items-center justify-center gap-2 active:opacity-90"
           >
             <Text className="text-text-main dark:text-white font-bold text-lg">Get Started</Text>
