@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, ScrollView, TouchableOpacity, Image } from 'react-native';
 import { useRouter } from 'expo-router';
+import { ConversationCard } from '@/components/conversation-card';
 import { MaterialIcons } from '@expo/vector-icons';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { LinearGradient } from 'expo-linear-gradient';
@@ -59,46 +60,21 @@ export default function HomeDashboard() {
             </TouchableOpacity>
           </View>
           <View className="gap-4">
-            {/* Conversation Card 1 */}
-            <TouchableOpacity onPress={() => router.push('/chat')} className="p-5 rounded-2xl bg-white dark:bg-slate-800 shadow-sm border border-slate-100 dark:border-slate-700/50">
-              <View className="flex-row items-start gap-4">
-                <View className="relative">
-                  <View className="w-12 h-12 rounded-full overflow-hidden bg-gray-200">
-                     <Image
-                        source={{ uri: "https://lh3.googleusercontent.com/aida-public/AB6AXuABhK3hA0JroW5t_T5R3JE9N02K92U0fupocDfvANgjxT5nD0BM7VJVvsbdH6U5C3n0ey8-S2dPvipQriAQnx5-EJy-6A2QvJN-0ScBzONaMSvvfUGq3M2fVl2umbGDdNETRoWRXHecouC0h7v1pXLPDgqiMtipm5ioG9Vx5pKmNhpCC-_LWd8HQJh3lyJmjbVfQi3ymW9DEidHQ3buWhcybzHdCXbTVRBY21h4dKheWuS3SiwvTWQo0z8WucDhclEgt9MabOpbsTQ8" }}
-                        className="w-full h-full"
-                        resizeMode="cover"
-                     />
-                  </View>
-                  <View className="absolute bottom-0 right-0 w-3 h-3 bg-green-400 border-2 border-white dark:border-slate-800 rounded-full" />
-                </View>
-                <View className="flex-1">
-                  <View className="flex-row justify-between items-baseline mb-1">
-                    <Text className="text-slate-900 dark:text-white font-semibold" numberOfLines={1}>Sarah M.</Text>
-                    <Text className="text-xs text-slate-400">2m ago</Text>
-                  </View>
-                  <Text className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed" numberOfLines={2}>I've been trying that breathing exercise you mentioned last week, it's actually helping...</Text>
-                </View>
-              </View>
-            </TouchableOpacity>
+            <ConversationCard
+              onPress={() => router.push('/chat')}
+              avatarUrl="https://lh3.googleusercontent.com/aida-public/AB6AXuABhK3hA0JroW5t_T5R3JE9N02K92U0fupocDfvANgjxT5nD0BM7VJVvsbdH6U5C3n0ey8-S2dPvipQriAQnx5-EJy-6A2QvJN-0ScBzONaMSvvfUGq3M2fVl2umbGDdNETRoWRXHecouC0h7v1pXLPDgqiMtipm5ioG9Vx5pKmNhpCC-_LWd8HQJh3lyJmjbVfQi3ymW9DEidHQ3buWhcybzHdCXbTVRBY21h4dKheWuS3SiwvTWQo0z8WucDhclEgt9MabOpbsTQ8"
+              isOnline={true}
+              title="Sarah M."
+              time="2m ago"
+              message="I've been trying that breathing exercise you mentioned last week, it's actually helping..."
+            />
 
-            {/* Conversation Card 2 */}
-            <TouchableOpacity className="p-5 rounded-2xl bg-white dark:bg-slate-800 shadow-sm border border-slate-100 dark:border-slate-700/50">
-              <View className="flex-row items-start gap-4">
-                <View className="relative">
-                  <View className="w-12 h-12 rounded-full bg-primary/10 items-center justify-center">
-                    <Text className="text-primary font-bold text-lg">J</Text>
-                  </View>
-                </View>
-                <View className="flex-1">
-                  <View className="flex-row justify-between items-baseline mb-1">
-                    <Text className="text-slate-900 dark:text-white font-semibold" numberOfLines={1}>Support Group: New Parents</Text>
-                    <Text className="text-xs text-slate-400">1h ago</Text>
-                  </View>
-                  <Text className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed" numberOfLines={2}>Does anyone else feel guilty when taking time for themselves? Need some perspective.</Text>
-                </View>
-              </View>
-            </TouchableOpacity>
+            <ConversationCard
+              avatarPlaceholder="J"
+              title="Support Group: New Parents"
+              time="1h ago"
+              message="Does anyone else feel guilty when taking time for themselves? Need some perspective."
+            />
           </View>
         </View>
 
