@@ -61,7 +61,7 @@ export default function IdentitySetup() {
                 <Text className="text-[10px] font-medium text-success uppercase">Verified</Text>
               </View>
             </View>
-            <Text className="text-xs text-text-sub dark:text-text-dark mt-2 ml-1">Visible to others. We've verified your real identity privately.</Text>
+            <Text className="text-xs text-text-sub dark:text-text-dark mt-2 ml-1">Visible to others. We&apos;ve verified your real identity privately.</Text>
           </View>
 
           {/* Values Bio */}

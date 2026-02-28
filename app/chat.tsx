@@ -67,7 +67,7 @@ export default function ChatInterface() {
                 <Text className="text-[10px] text-text-sub dark:text-text-dark">10:30 AM</Text>
               </View>
               <View className="p-4 rounded-2xl rounded-bl-none bg-surface-light dark:bg-surface-dark shadow-sm border border-primary/5">
-                <Text className="text-sm leading-relaxed text-text-main dark:text-text-light">Welcome everyone. 🌿 Feel free to share what's on your mind today. We are here to listen without judgment.</Text>
+                <Text className="text-sm leading-relaxed text-text-main dark:text-text-light">Welcome everyone. 🌿 Feel free to share what&apos;s on your mind today. We are here to listen without judgment.</Text>
               </View>
               {/* Reactions */}
               <View className="flex-row gap-2 ml-1">
@@ -94,7 +94,7 @@ export default function ChatInterface() {
                 <Text className="text-[10px] text-text-sub dark:text-text-dark">10:32 AM</Text>
               </View>
               <View className="p-4 rounded-2xl rounded-bl-none bg-white dark:bg-surface-dark shadow-sm">
-                <Text className="text-sm leading-relaxed text-text-main dark:text-text-light">I've been feeling really overwhelmed with work lately. It feels like I can't catch my breath even when I'm sitting still.</Text>
+                <Text className="text-sm leading-relaxed text-text-main dark:text-text-light">I&apos;ve been feeling really overwhelmed with work lately. It feels like I can&apos;t catch my breath even when I&apos;m sitting still.</Text>
               </View>
               <View className="flex-row gap-2 ml-1">
                 <TouchableOpacity className="flex-row items-center gap-1 bg-surface-light dark:bg-surface-dark px-2 py-1 rounded-full border border-transparent">
