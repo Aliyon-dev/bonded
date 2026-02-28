@@ -51,7 +51,7 @@ export function TabBar({ state, descriptors, navigation }: BottomTabBarProps) {
             accessibilityRole="button"
             accessibilityState={isFocused ? { selected: true } : {}}
             accessibilityLabel={options.tabBarAccessibilityLabel}
-            testID={options.tabBarTestID}
+            testID={options.tabBarButtonTestID}
             onPress={onPress}
             onLongPress={onLongPress}
             className="flex-1 items-center justify-end gap-1"

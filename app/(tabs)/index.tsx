@@ -77,7 +77,7 @@ export default function HomeDashboard() {
                     <Text className="text-slate-900 dark:text-white font-semibold" numberOfLines={1}>Sarah M.</Text>
                     <Text className="text-xs text-slate-400">2m ago</Text>
                   </View>
-                  <Text className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed" numberOfLines={2}>I've been trying that breathing exercise you mentioned last week, it's actually helping...</Text>
+                  <Text className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed" numberOfLines={2}>I&apos;ve been trying that breathing exercise you mentioned last week, it&apos;s actually helping...</Text>
                 </View>
               </View>
             </TouchableOpacity>
