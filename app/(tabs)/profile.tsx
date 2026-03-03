@@ -106,7 +106,7 @@ export default function IdentitySetup() {
       {/* Sticky Bottom Action */}
       <View className="absolute bottom-0 left-0 right-0 p-6 bg-background-light/95 dark:bg-background-dark/95 border-t border-black/5 dark:border-white/5">
         <TouchableOpacity
-          onPress={() => router.push('/')}
+          onPress={() => router.push('/(tabs)')}
           className="w-full bg-primary py-4 rounded-xl shadow-lg flex-row items-center justify-center gap-2"
         >
           <Text className="text-white text-base font-semibold">Save Profile</Text>

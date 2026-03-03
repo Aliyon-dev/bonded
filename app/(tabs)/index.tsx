@@ -280,56 +280,6 @@ export default function HomeDashboard() {
           </ScrollView>
         </View>
       </ScrollView>
-
-      {/* Bottom Navigation */}
-      <View className="absolute bottom-0 w-full bg-white dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800 pb-5 pt-3 px-6 shadow-sm z-50 flex-row justify-between items-center">
-        <TouchableOpacity
-          onPress={() => router.push("/home")}
-          className="flex-1 items-center justify-end gap-1"
-        >
-          <MaterialIcons name="home" size={26} className="text-primary" />
-          <Text className="text-[10px] font-bold text-primary">Home</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          onPress={() => router.push("/create-circle")}
-          className="flex-1 items-center justify-end gap-1"
-        >
-          <MaterialIcons
-            name="explore"
-            size={26}
-            className="text-slate-400 dark:text-slate-500"
-          />
-          <Text className="text-[10px] font-medium text-slate-400 dark:text-slate-500">
-            Explore
-          </Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          onPress={() => router.push("/reflection")}
-          className="flex-1 items-center justify-end gap-1"
-        >
-          <MaterialIcons
-            name="book"
-            size={26}
-            className="text-slate-400 dark:text-slate-500"
-          />
-          <Text className="text-[10px] font-medium text-slate-400 dark:text-slate-500">
-            Journal
-          </Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          onPress={() => router.push("/setup")}
-          className="flex-1 items-center justify-end gap-1"
-        >
-          <MaterialIcons
-            name="account-circle"
-            size={26}
-            className="text-slate-400 dark:text-slate-500"
-          />
-          <Text className="text-[10px] font-medium text-slate-400 dark:text-slate-500">
-            Profile
-          </Text>
-        </TouchableOpacity>
-      </View>
     </SafeAreaView>
   );
 }
